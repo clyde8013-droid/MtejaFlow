@@ -106,8 +106,3 @@ curl -X POST http://localhost:4000/api/messages/generate \
   -H "Content-Type: application/json" \
   -d '{"customerName":"John","situation":"Quotation unanswered for 5 days","tone":"professional_friendly","language":"en"}'
 ```
-
-## Next steps
-
-Say "begin Phase 2" to build out full customer management (CRUD, search,
-filters, profile page) on top of this foundation.
