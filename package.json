@@ -1,0 +1,8 @@
+{
+  "name": "mtejaflow",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "apps/api"
+  ]
+}

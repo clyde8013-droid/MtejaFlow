@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.balanceLine {
+  font-size: var(--text-sm);
+  color: var(--color-ink-soft);
+}
+.balanceLine strong {
+  color: var(--color-ink);
+}
+
+.errorBanner {
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-sm);
+}

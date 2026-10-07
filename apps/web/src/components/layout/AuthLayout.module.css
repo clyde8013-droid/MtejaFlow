@@ -1,0 +1,100 @@
+.wrap {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 860px) {
+  .wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel {
+  background: var(--color-primary);
+  background-image: radial-gradient(circle at 20% 15%, rgba(255, 255, 255, 0.08), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(192, 138, 46, 0.18), transparent 50%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--space-10);
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 860px) {
+  .panel {
+    display: none;
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.brandMark {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent);
+  color: var(--color-primary-dark);
+  font-family: var(--font-display);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.brandName {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.panelContent {
+  max-width: 420px;
+  margin: auto 0;
+}
+
+.tagline {
+  font-size: var(--text-3xl);
+  color: #fff;
+  margin-bottom: var(--space-4);
+}
+
+.taglineSub {
+  font-size: var(--text-md);
+  color: rgba(255, 255, 255, 0.78);
+  line-height: var(--leading-normal);
+}
+
+.motif {
+  height: 6px;
+  width: 140px;
+  background-image: linear-gradient(45deg, var(--color-accent) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--color-accent) 25%, transparent 25%);
+  background-size: 6px 6px;
+}
+
+.formSide {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-8);
+}
+
+.formSideTop {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formCard {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8) 0;
+}
